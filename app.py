@@ -32,7 +32,7 @@ st.markdown(sidebar_bg_img, unsafe_allow_html=True)
 # Page navigation
 st.sidebar.markdown(f"<h4 style='text-align: center; color: white;'>Navigation</h4>", unsafe_allow_html=True)
 url_home = "https://russellwhealdonportfolio.streamlit.app/"
-url_resume = "https://russellwhealdonportfolio.streamlit.app/"
+url_resume = "https://russellwhealdonportfolio-resume.streamlit.app/"
 url_hobbies = "https://russellwhealdonportfolio.streamlit.app/"
 st.sidebar.markdown(f"<h4><a href='{url_home}' target='_blank'>Home</a></h4>", unsafe_allow_html=True)
 st.sidebar.markdown(f"<h4><a href='{url_resume}' target='_blank'>Resume</a></h4>", unsafe_allow_html=True)
@@ -40,3 +40,15 @@ st.sidebar.markdown(f"<h4><a href='{url_hobbies}' target='_blank'>Hobbies</a></h
 
 
 pdf_viewer("RussellWhealdon_CVApr24.pdf")
+
+# Path to the PDF file
+file_path = "RussellWhealdon_CVApr24.pdf"
+
+# Open the file in binary mode
+with open(file_path, "rb") as file:
+    btn = st.download_button(
+            label="Download PDF",
+            data=file,
+            file_name="RussellWhealdon_CVApr24.pdf",
+            mime="application/octet-stream"
+        )
