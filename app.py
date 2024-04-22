@@ -38,9 +38,6 @@ st.sidebar.markdown(f"<h4><a href='{url_home}' target='_blank'>Home</a></h4>", u
 st.sidebar.markdown(f"<h4><a href='{url_resume}' target='_blank'>Resume</a></h4>", unsafe_allow_html=True)
 st.sidebar.markdown(f"<h4><a href='{url_hobbies}' target='_blank'>Hobbies</a></h4>", unsafe_allow_html=True)
 
-
-pdf_viewer("RussellWhealdon_CVApr24.pdf")
-
 # Path to the PDF file
 file_path = "RussellWhealdon_CVApr24.pdf"
 
@@ -52,3 +49,6 @@ with open(file_path, "rb") as file:
             file_name="RussellWhealdon_CVApr24.pdf",
             mime="application/octet-stream"
         )
+
+pdf_viewer("RussellWhealdon_CVApr24.pdf")
+
