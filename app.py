@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
 
-st.set_page_config(page_title= f"Russell Whealdon Data Science Portfolio",page_icon="🧑‍🚀",layout="wide")
+st.set_page_config(page_title= f"Russell Whealdon Data Science Portfolio",page_icon="🧑‍🚀")
 st.markdown(f"<h1 style='text-align: center; color: white;'>Russell Whealdon Resume</h1>", unsafe_allow_html=True)
 
 #Set background image for page
