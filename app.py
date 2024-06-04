@@ -39,16 +39,16 @@ st.sidebar.markdown(f"<h4><a href='{url_resume}' target='_blank'>Resume</a></h4>
 st.sidebar.markdown(f"<h4><a href='{url_hobbies}' target='_blank'>Hobbies</a></h4>", unsafe_allow_html=True)
 
 # Path to the PDF file
-file_path = "RussellWhealdon_CVApr24.pdf"
+file_path = "RussellWhealdon_CV.pdf"
 
 # Open the file in binary mode
 with open(file_path, "rb") as file:
     btn = st.download_button(
             label="Download PDF",
             data=file,
-            file_name="RussellWhealdon_CVApr24.pdf",
+            file_name="RussellWhealdon_CV",
             mime="application/octet-stream"
         )
 
-pdf_viewer("RussellWhealdon_CVApr24.pdf")
+pdf_viewer("RussellWhealdon_CV.pdf")
 
