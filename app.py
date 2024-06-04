@@ -33,10 +33,10 @@ st.markdown(sidebar_bg_img, unsafe_allow_html=True)
 st.sidebar.markdown(f"<h4 style='text-align: center; color: white;'>Navigation</h4>", unsafe_allow_html=True)
 url_home = "https://russellwhealdonportfolio.streamlit.app/"
 url_resume = "https://russellwhealdonportfolio-resume.streamlit.app/"
-url_hobbies = "https://russellwhealdonportfolio.streamlit.app/"
+url_hobbies = "https://russellwhealdonportfolio-hobbies.streamlit.app/"
 st.sidebar.markdown(f"<h4><a href='{url_home}' target='_blank'>Home</a></h4>", unsafe_allow_html=True)
 st.sidebar.markdown(f"<h4><a href='{url_resume}' target='_blank'>Resume</a></h4>", unsafe_allow_html=True)
-#st.sidebar.markdown(f"<h4><a href='{url_hobbies}' target='_blank'>Hobbies</a></h4>", unsafe_allow_html=True)
+st.sidebar.markdown(f"<h4><a href='{url_hobbies}' target='_blank'>Hobbies</a></h4>", unsafe_allow_html=True)
 
 # Path to the PDF file
 file_path = "RussellWhealdon_CV.pdf"
